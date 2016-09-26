@@ -23,7 +23,11 @@ function init () {
     }
     switchPlayer()
     checkWin()
+    if (clicks === 9) {
+      alert('Close Game! Try at winning again.')
+    }
   }
+
 
   function switchPlayer () {
     if (currentPlayer === 1) {
@@ -83,12 +87,16 @@ function init () {
       alert('Player 2 won!')
     // return // true or false;
       }
-      else {
-        checkDraw()
-        // checkDraw()
-      }
     }
 
+    // function checkDraw () {
+    //   for (clicks === 9) {
+    //     alert('This game is a draw')
+    //   }
+    //   else {
+    //     boxClick ()
+    //   }
+    // }
 
 
     // function checkDraw (){
