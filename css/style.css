@@ -53,12 +53,12 @@ p {
 }
 
 .card.clickx {
-  background-image: url("http://toastmasters.ru/wp-content/uploads/2016/04/Tic-tac-toe-cross.png");
+  background-image: url("../img/Tic-tac-toe-cross.png");
   background-repeat: no-repeat;
 }
 
 .card.clicko{
-  background-image: url("http://i1262.photobucket.com/albums/ii604/Oliver_Ullman/tic-tac-toe-hi_zps1yjhvlmt.png");
+  background-image: url("../img/Circle.png");
   background-size: 120px;
   background-position: center;
   background-repeat: no-repeat;
