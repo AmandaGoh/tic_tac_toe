@@ -22,23 +22,18 @@ p {
   margin: 100px auto;
 }
 .card{
-  /*box-sizing: border-box;*/
   background: white;
-  /*border: 1px solid black;*/
   float: left;
   height: 150px;
   width: 150px;
-  /*width: 32.88%;
-  height: 32.93%;*/
   display: inline-block;
   cursor: pointer;
+  color: white;
 }
 
 .card:hover {
-  background: yellow;
-}
-
-.card.one{
+  background: rgb(217, 86, 129);
+  color: rgb(217, 86, 129);
 }
 
 .card.two {
@@ -58,11 +53,15 @@ p {
 }
 
 .card.clickx {
-  background: red;
+  background-image: url("http://toastmasters.ru/wp-content/uploads/2016/04/Tic-tac-toe-cross.png");
+  background-repeat: no-repeat;
 }
 
 .card.clicko{
-  background: blue;
+  background-image: url("http://i1262.photobucket.com/albums/ii604/Oliver_Ullman/tic-tac-toe-hi_zps1yjhvlmt.png");
+  background-size: 120px;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 #reset {
@@ -73,5 +72,5 @@ p {
   color: white;
   font-size: 20px;
   position: absolute;
-  left: 42%;
+  left: 45%;
 }
