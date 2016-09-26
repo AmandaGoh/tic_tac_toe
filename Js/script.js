@@ -21,24 +21,27 @@ function init () {
       this.textContent = score - 5
       clicks += 1
     }
+    switchPlayer()
+    checkWin()
   }
 
+  function switchPlayer () {
+    if (currentPlayer === 1) {
+      currentPlayer = 2
+    } else {
+      currentPlayer = 1
+    }
+  }
 
   // var gameWon = checkWin()
   //
   // if(gameWon) {
   //     alertWinner()
   //   } else {
-  //    switchPlayer()
+  //     switchPlayer()
   //   }
 
-    function switchPlayer () {
-      if (currentPlayer === 1) {
-        currentPlayer = 2
-      } else {
-        currentPlayer = 1
-      }
-    }
+
 
 
   // purely just checked all box scores
@@ -77,14 +80,15 @@ function init () {
       alert('Player 1 won!')
       }
       else if (winCombiOne === -15 || winCombiTwo === -15 || winCombiThree === -15 || winCombiFour === -15 || winCombiFive === -15 || winCombiSix === -15 || winCombiSeven === -15 || winCombiEight === -15) {
-        alert('Player 2 won!')
+      alert('Player 2 won!')
     // return // true or false;
       }
       else {
-        console.log('test')
+        checkDraw()
         // checkDraw()
       }
     }
+
 
 
     // function checkDraw (){
